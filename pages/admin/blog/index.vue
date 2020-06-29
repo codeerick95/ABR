@@ -45,7 +45,7 @@
   import PostsTable from '@/components/admin/blog/Table'
   import ModalUserEdit  from '@/components/admin/blog/Edit'
   import ModalPostDelete from '@/components/admin/blog/Delete'
-  import ModalComments from '@/components/admin/blog/comments/list'
+  import ModalComments from '@/components/admin/blog/comments/List'
   import Post from '@/components/admin/blog/Post'
 
 
