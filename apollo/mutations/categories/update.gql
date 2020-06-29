@@ -1,0 +1,5 @@
+mutation updateCategoriaBlog($input: CategoriaBlogInput!){
+  updateCategoriaBlog(input: $input) {
+    titleCategoryBlog
+  }
+}

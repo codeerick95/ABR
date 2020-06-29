@@ -1,0 +1,5 @@
+mutation deleteActividades($input: ActividadesInput!){
+  deleteActividades(input: $input) {
+    id
+  }
+}

@@ -1,0 +1,11 @@
+query getCategoriaBlog {
+  categorias_blog{
+    id
+    titleCategoryBlog
+    slugTitleCategoryBlog
+    keywords
+    description
+    created_at
+    nroBlogs
+  }
+}

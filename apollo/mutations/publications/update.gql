@@ -1,0 +1,5 @@
+mutation updatePublicaciones($input: PublicacionesInput!, $filePublication: Upload, $imagePublication: Upload ){
+ updatePublicaciones(input:$input, filePublication: $filePublication, imagePublication: $imagePublication) {
+   id
+ }
+}

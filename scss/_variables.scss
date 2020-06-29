@@ -1,0 +1,17 @@
+$primary: #274885;
+$dark: #272D2D;
+$warning: #DDA223;
+$secondary: #666666;
+$light: #f2f2f2;
+
+$body-font-family: 'Poppins';
+
+.container {
+    max-width: 90% !important;
+
+    @media (min-width: 1200px) {
+        max-width: 80% !important;
+    }
+}
+
+@import "./mixins";

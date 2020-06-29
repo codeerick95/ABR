@@ -1,0 +1,6 @@
+mutation UpdateNotificaion($input: NotificacionInput!){
+ UpdateNotificacion(input:$input) {
+   id
+   stateNotification
+ }
+}

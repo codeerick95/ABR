@@ -1,0 +1,12 @@
+query getPublicaciones_categoria($categoria_id:Int,$page:Int,$number_paginate:Int) {
+  publicaciones_categorias(id_categoria:$categoria_id,page:$page,number_paginate:$number_paginate) {
+    id
+    titlePublication
+    descriptionPublication
+    filePublication
+    imagePublication
+    user_id
+    categoryPublication_id
+    created_at
+  }
+}

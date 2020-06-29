@@ -1,0 +1,5 @@
+mutation updateComentarioBlog($input: ComentarioBlogInput!) {
+  updateComentarioBlog(input: $input) {
+    id
+  }
+}

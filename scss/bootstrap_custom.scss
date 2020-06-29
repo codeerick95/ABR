@@ -1,0 +1,35 @@
+@import './variables';
+
+@import './vuetify';
+
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'bootstrap-vue/src/index.scss';
+
+/* Mixins personalizados del proyecto */
+
+@import './mixins';
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background-color: $warning !important;
+}
+
+.d__mobile {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.d__desktop {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.text-md-justify {
+  @media (min-width: 768px) {
+    text-align: justify;
+  }
+}

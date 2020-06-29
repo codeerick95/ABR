@@ -1,0 +1,12 @@
+mutation createContacto($input: ContactoInput!){
+  createContacto(input: $input) {
+    typeContact
+    name
+    numberDocument
+    email
+    phone
+    schedule
+    subject
+    bodyMessage
+  }
+}

@@ -1,0 +1,18 @@
+query getBLogTitle($page:Int,$number_paginate:Int,$title:String){
+  blogs_get_title(page:$page,number_paginate:$number_paginate,title:$title) {
+      nroTotal_items
+      data{
+        id
+        titleBlog
+        slugTitleBlog
+        textBlog
+        keywords
+        description
+        imageBlog
+        imageRedimencionada
+        imageBlogMiniature
+        categoryBlog_id
+        created_at
+      }
+  }
+}

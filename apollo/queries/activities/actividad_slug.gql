@@ -1,0 +1,16 @@
+query get_Actividad_slug($slugTitle:String,$page:Int,$number_paginate:Int, $estado:Int) {
+  actividad_slug(slugTitle:$slugTitle,page:$page,number_paginate:$number_paginate, estado: $estado){
+      nroTotal_items
+      data{
+        id
+        titleActivity
+        slugtitleActivity
+        textActivity
+        keywords
+        description
+        imagenDestacada
+        galleryActivity
+        categoryActivity_id
+     }
+  }
+}

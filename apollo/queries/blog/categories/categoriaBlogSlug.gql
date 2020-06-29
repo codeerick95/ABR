@@ -1,0 +1,28 @@
+query CategoriaBlogSlug($slugTitle:String,$page:Int,$number_paginate:Int, $estado:Int) {
+  categorias_blog_slug(slugTitle:$slugTitle,page:$page,number_paginate:$number_paginate, estado:$estado){
+    nroTotal_items
+    data{
+        id
+        titleBlog
+        slugTitleBlog
+        textBlog
+        imageBlog
+        keywords
+        description
+        imageRedimencionada
+        imageBlogMiniature
+        categoryBlog_id
+        created_at
+        nroComents
+        estado
+      	data{
+           id
+           titleCategoryBlog
+           slugTitleCategoryBlog
+           keywords
+           description
+           stateCategoryBlog
+        }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+mutation updateEditor($input: EditorInput! $photoEditor: Upload) {
+  updateEditor(input: $input, photoEditor: $photoEditor) {
+    id
+  }
+}

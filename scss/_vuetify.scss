@@ -1,0 +1,11 @@
+.v-application {
+    font-family: $body-font-family !important;
+}
+
+.v-application ul, .v-application ol {
+    padding-left: 0 !important;
+}
+
+.v-application .d-none {
+    display: initial !important;
+}

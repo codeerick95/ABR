@@ -1,0 +1,12 @@
+mutation CreatePublicaciones($input: PublicacionesInput!, $file1: Upload, $file2: Upload ){
+ createPublicaciones(input: $input, filePublication: $file1, imagePublication: $file2) {
+   id
+   titlePublication
+   descriptionPublication
+   filePublication
+   imagePublication
+   categoryPublication_id
+   user_id
+ }
+
+}

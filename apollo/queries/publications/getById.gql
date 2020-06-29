@@ -1,0 +1,12 @@
+query getPublicaciones($categoria_id:Int,$first:Int) {
+  publicaciones(id_categoria:$categoria_id,first:$first) {
+    id
+    titlePublication
+    descriptionPublication
+    filePublication
+    imagePublication
+    user_id
+    categoryPublication_id
+    created_at
+  }
+}

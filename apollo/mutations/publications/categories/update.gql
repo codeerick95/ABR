@@ -1,0 +1,5 @@
+mutation updateCategoriaPublicaciones($input: CategoriaPublicacionesInput!, $photoCategoryPublication: Upload){
+  updateCategoriaPublicaciones(input: $input, photoCategoryPublication: $photoCategoryPublication) {
+    id
+  }
+}

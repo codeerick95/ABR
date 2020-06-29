@@ -1,0 +1,22 @@
+query getBlogs($page:Int,$number_paginate:Int, $estado:Int){
+  blogs_get(page:$page,number_paginate:$number_paginate, estado:$estado){
+      nroTotal_items
+      data{
+        id
+        titleBlog
+        slugTitleBlog
+        textBlog
+        imageBlog
+        keywords
+        description
+        imageRedimencionada
+        imageBlogMiniature
+        categoryBlog_id
+        created_at
+        nroComents
+        estado
+        Name
+        alias
+      }
+  }
+}

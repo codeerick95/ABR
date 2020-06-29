@@ -1,0 +1,9 @@
+query getCategoriasPublicaciones {
+  categoria_publicaciones{
+    id
+    nameCategoryPublication
+    photoCategoryPublication
+    stateCategoryPublication
+    created_at
+  }
+}

@@ -1,0 +1,30 @@
+query get_Coment_Latest_Three {
+  Coments_latest_three {
+    id
+    textComent
+    nombreComent
+    emailComent
+    sitioComent
+    stateComent
+    blog_id
+    created_at
+    typeUserComentario
+    photo
+    data {
+      id
+      titleBlog
+      textBlog
+      slugTitleBlog
+      keywords
+      description
+      imageBlog
+      imageRedimencionada
+      imageBlogMiniature
+      categoryBlog_id
+      user_id
+      created_at
+      nroComents
+
+    }
+  }
+}

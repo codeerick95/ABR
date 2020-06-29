@@ -1,0 +1,5 @@
+mutation createActividades($input: ActividadesInput!, $imagenDestacada: Upload, $galleryActivity: [Upload!]) {
+  createActividades(input: $input, imagenDestacada: $imagenDestacada, galleryActivity: $galleryActivity) {
+    id
+  }
+}

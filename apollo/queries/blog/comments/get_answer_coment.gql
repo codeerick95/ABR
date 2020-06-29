@@ -1,0 +1,13 @@
+query get_answer_coment($id_coment:Int) {
+  answer_coments(id_coment:$id_coment) {
+    id
+    textComent
+    nombreComent
+    emailComent
+    sitioComent
+    stateComent
+    coment_blog_id
+    typeUserRespuesta
+    photo
+  }
+}

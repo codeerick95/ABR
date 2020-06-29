@@ -1,0 +1,8 @@
+mutation CreateCategoriaPublicaciones($input: CategoriaPublicacionesInput!, $file: Upload ){
+ createCategoriaPublicaciones(input: $input, photoCategoryPublication: $file) {
+   id
+   nameCategoryPublication
+   photoCategoryPublication
+   stateCategoryPublication
+ }
+}

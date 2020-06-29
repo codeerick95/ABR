@@ -1,0 +1,187 @@
+@import '../_variables';
+
+:root {
+  --dark: #2D3047;
+  --success: #419D78;
+  --secondary: #585866;
+  --danger: #B33951;
+}
+
+.carousel-main {
+  background-color: $primary;
+  position: relative;
+  overflow: hidden;
+
+  width: 100%;
+
+  &__item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    /* right: -100%;
+    transition: right 1.5s; */
+    transition: opacity 1s;
+    opacity: 0;
+  }
+
+  &__item--active {
+    opacity: 1;
+    z-index: 10;
+    /* right: 0; */
+  }
+
+  &__item-content {
+    /* Este es el efecto oscuro del item */
+    background-color: rgba(#2D3047, .7);
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 100;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+
+    object-position: center;
+    object-fit: cover;
+  }
+
+  &__points {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    z-index: 10;
+
+    width: 100%;
+    padding: .5rem 1rem;
+  }
+
+  &__points-container {
+    width: max-content;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  &__point {
+    background-color: rgba($warning, .3);
+
+    width: .7rem;
+    height: .7rem;
+
+    @media (min-width: 720px) {
+      width: .9rem;
+      height: .9rem;
+    }
+
+    margin: 0 .3rem;
+    border-radius: 50%;
+    border: none;
+
+    outline: none;
+
+    transition: background-color .5s;
+
+    &:hover {
+      background-color: $dark;
+
+      cursor: pointer;
+    }
+  }
+
+  /* Estilos del punto activo */
+
+  &__point--active {
+    background-color: $warning;
+
+    &:hover {
+      background-color: $warning;
+    }
+  }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+
+/* Estilos adicionales, el único estilo importante es la altura */
+.carousel-custom {
+  height: 100vh; /* Importante: Definir altura */
+
+  @media (min-width: 720px) {
+    height: 60vh;
+  }
+
+  @media (min-width: 1200px) {
+    height: 100vh;
+  }
+}
+
+.carousel__content-custom {
+  width: 80%;
+  height: 100%;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .carousel__title {
+    font-size: 4em;
+    color: white;
+  }
+}
+
+.carousel__point {
+  outline: none !important;
+}
+
+.carousel__title {
+  font-size: 1.5em;
+  font-weight: 800;
+
+  @media (min-width: 720px) {
+    max-width: 90%;
+    font-size: 2.5em;
+  }
+
+  @media (min-width: 1024px) {
+    margin-top: 2rem;
+  }
+}
+
+.carousel__description {
+  background-color: rgba($dark, .07);
+  color: white;
+  font-size: 1em;
+  font-weight: 400;
+  padding: 1rem;
+  border-left: 4px solid $warning;
+  transition: background-color .5s;
+
+  @media (min-width: 720px) {
+    width: 80%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
+
+  &:hover {
+    background-color: rgba($dark, .09);
+  }
+
+}

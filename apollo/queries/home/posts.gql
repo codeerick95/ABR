@@ -1,0 +1,16 @@
+query blogs_latest_three {
+  blogs_latest_three{
+    id
+    titleBlog
+    slugTitleBlog
+    textBlog
+    imageBlog
+    keywords
+    description
+    imageRedimencionada
+    imageBlogMiniature
+    categoryBlog_id
+    created_at
+    nroComents
+  }
+}

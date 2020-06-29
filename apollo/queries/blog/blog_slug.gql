@@ -1,0 +1,26 @@
+query Blog_get_slug($slugTitle:String) {
+  blog_slug(slugTitle:$slugTitle){
+    id
+    titleBlog
+    slugTitleBlog
+    textBlog
+    keywords
+    description
+    imageBlog
+    imageRedimencionada
+    imageBlogMiniature
+    categoryBlog_id
+    created_at
+    Name
+    alias
+    estado
+    data{
+      id
+       titleCategoryBlog
+       slugTitleCategoryBlog
+       keywords
+       description
+       stateCategoryBlog
+    }
+  }
+}

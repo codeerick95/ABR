@@ -1,0 +1,18 @@
+query getUsers($page:Int,$number_paginate:Int){
+  Getusers(page:$page,number_paginate:$number_paginate) {
+    nroTotal_items
+    data {
+      id
+    	nameEditor
+      typeDocumentEditor
+      numberDocumentEditor
+      nameEditor
+      email
+      fatherSurnameEditor
+      motherSurnameEditor
+      dateBirthEditor
+      alias
+      photoEditor
+    }
+  }
+}

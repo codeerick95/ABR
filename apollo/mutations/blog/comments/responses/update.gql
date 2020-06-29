@@ -1,0 +1,11 @@
+mutation UpdateRespuestas($input: RespuestasInput!){
+ updateRespuestas(input:$input) {
+   id
+   textComent
+   nombreComent
+   emailComent
+   sitioComent
+   stateComent
+   coment_blog_id
+ }
+}

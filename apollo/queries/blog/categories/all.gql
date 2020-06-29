@@ -1,0 +1,9 @@
+query getCategoriasBlog {
+  categorias_blog{
+    id
+    titleCategoryBlog
+    nroBlogs
+    keywords
+    description
+  }
+}

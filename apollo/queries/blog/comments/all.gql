@@ -1,0 +1,14 @@
+query get_coment_bloq($id_blog:Int) {
+  coment_blog(id_blog:$id_blog) {
+    id
+    textComent
+    nombreComent
+    emailComent
+    sitioComent
+    stateComent
+    blog_id
+    created_at
+    typeUserComentario
+    photo
+  }
+}

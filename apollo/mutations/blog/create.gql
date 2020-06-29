@@ -1,0 +1,9 @@
+mutation createBlog($input: BlogInput!, $imageBlog: Upload, $imageBlogMiniature: Upload){
+  createBlog(input: $input, imageBlog: $imageBlog, imageBlogMiniature: $imageBlogMiniature) {
+    id
+    titleBlog
+  	textBlog
+  	categoryBlog_id
+  	imageBlog
+  }
+}

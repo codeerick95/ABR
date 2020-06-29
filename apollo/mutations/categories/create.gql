@@ -1,0 +1,5 @@
+mutation creareCategoryBlog($input: CategoriaBlogInput!){
+  createCategoriaBlog(input: $input) {
+    titleCategoryBlog
+  }
+}

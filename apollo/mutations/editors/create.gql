@@ -1,0 +1,7 @@
+mutation createEditor($input: EditorInput!, $photoEditor: Upload){
+  createEditor(input: $input, photoEditor: $photoEditor) {
+    nameEditor
+    typeDocumentEditor
+    email
+  }
+}

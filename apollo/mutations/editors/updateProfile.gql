@@ -1,0 +1,8 @@
+mutation UpdateDataAdmin($input: UserInput!,$file1:Upload!){
+ UpdateAdmin(input:$input,photo:$file1) {
+   id
+   email
+   photo
+   name
+ }
+}

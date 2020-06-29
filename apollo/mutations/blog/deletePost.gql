@@ -1,0 +1,8 @@
+mutation deleteBlog($input: BlogInput!){
+  deleteBlog(input: $input) {
+    id
+    titleBlog
+  	textBlog
+  	categoryBlog_id
+  }
+}

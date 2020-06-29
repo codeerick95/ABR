@@ -1,0 +1,5 @@
+mutation updateBlog($input: BlogInput!, $imageBlog: Upload, $imageBlogMiniature: Upload) {
+  updateBlog(input: $input, imageBlog: $imageBlog, imageBlogMiniature: $imageBlogMiniature) {
+    id
+  }
+}

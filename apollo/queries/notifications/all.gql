@@ -1,0 +1,12 @@
+query getNotificaciones {
+  notificaciones{
+    id
+    stateNotification
+    created_at
+
+    data{
+      titleBlog
+      slugTitleBlog
+    }
+  }
+}

@@ -1,0 +1,16 @@
+query get_Latest_Three {
+  blogs_latest_three{
+    id
+    titleBlog
+    slugTitleBlog
+    textBlog
+    keywords
+    description
+    imageBlog
+    imageRedimencionada
+    imageBlogMiniature
+    categoryBlog_id
+    created_at
+    estado
+  }
+}

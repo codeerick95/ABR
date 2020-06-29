@@ -1,0 +1,17 @@
+query getPublicaciones_categoria($categoria_id:Int, $page:Int, $number_paginate:Int, $estado:Int) {
+  publicaciones_categorias(id_categoria:$categoria_id,page:$page,number_paginate:$number_paginate, estado:$estado) {
+      nroTotal_items
+      data{
+        id
+        titlePublication
+        descriptionPublication
+        filePublication
+        imagePublication
+        categoryPublication_id
+        created_at
+        estado
+        Name
+        alias
+      }
+  }
+}

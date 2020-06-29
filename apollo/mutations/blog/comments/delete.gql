@@ -1,0 +1,5 @@
+mutation deleteComentarioBlog($input: ComentarioBlogInput!) {
+  deleteComentarioBlog(input: $input) {
+    id
+  }
+}
