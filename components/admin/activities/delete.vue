@@ -7,11 +7,6 @@
         <p class="lead text-muted">¿Está seguro de eliminar?</p>
       </div>
 
-      <v-card-actions>
-        <v-spacer></v-spacer>
-        <v-btn color="primary darken-1" text :disabled="loading ?  true : false" @click="closeModal()">Cancelar</v-btn>
-        <v-btn color="red darken-1" text :disabled="loading ?  true : false" @click="deleteCategory()">{{ loading ?  'Eliminando...' : 'Eliminar' }}</v-btn>
-      </v-card-actions>
     </v-card>
   </v-dialog>
 </template>
