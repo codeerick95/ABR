@@ -98,6 +98,9 @@ export default {
   */
   buildModules: [
     [
+      '@nuxtjs/pwa'
+    ],
+    [
       '@nuxtjs/moment', {
         locales: ['es'],
         timezone: true,

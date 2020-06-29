@@ -43,7 +43,7 @@
   import Layout from '@/components/admin/Layout'
   import TableActivities from '@/components/admin/activities/Table'
   import EditActivity from '@/components/admin/activities/Edit'
-  import DeleteCategory from '@/components/admin/activities/Delete'
+  import DeleteCategory from '@/components/admin/activities/DeleteCategory'
   import Alert from '@/components/admin/categories-blog/Alert'
 
   export default {
