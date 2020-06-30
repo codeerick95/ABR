@@ -98,9 +98,6 @@ export default {
   */
   buildModules: [
     [
-      '@nuxtjs/pwa'
-    ],
-    [
       '@nuxtjs/moment', {
         locales: ['es'],
         timezone: true,
@@ -130,7 +127,8 @@ export default {
     'bootstrap-vue/nuxt',
     'vue-social-sharing/nuxt',
     '@nuxtjs/apollo',
-    'cookie-universal-nuxt'
+    'cookie-universal-nuxt',
+    '@nuxtjs/pwa'
   ],
   bootstrapVue: {
     bootstrapCSS: false, // Or `css: false`
