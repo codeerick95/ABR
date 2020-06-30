@@ -12,7 +12,7 @@
                 ABR, cuenta con un equipo de profesionales multidisciplinarios altamente capacitados y con una amplia experiencia, dedicados y especializados en temas contables, laborales, tributarios y financieros; en el ámbito tecnológico, servicios especializados en ingeniería, medio ambiente, Salud y Seguridad, técnicos operativos y logísticos.
                 El cual garantiza un servicio, altamente calificado basado en la planeación, implementación y soluciones integrales ante necesidades y requerimientos de nuestros clientes.
             </p>
-            
+
         </div>
     </div>
 
@@ -36,12 +36,12 @@
                             </div>
 
                             <div class="col-4">
-                                <card-team :item="team[3]"></card-team>
-                                
+                                <card-team :item="team[1]"></card-team>
+
                             </div>
 
                             <div class="col-4">
-                                <card-team :item="team[4]"></card-team>
+                                <card-team :item="team[2]"></card-team>
                             </div>
                         </div>
                     </b-carousel-slide>
@@ -49,9 +49,21 @@
                     <b-carousel-slide class="team-carousel__slide h-100">
                         <div class="row h-100">
                             <div class="col-4">
-                                <card-team :item="team[5]"></card-team>
+                                <card-team :item="team[3]"></card-team>
                             </div>
 
+                            <div class="col-4">
+                                <card-team :item="team[4]"></card-team>
+                            </div>
+
+                            <div class="col-4">
+                                <card-team :item="team[5]"></card-team>
+                            </div>
+                        </div>
+                    </b-carousel-slide>
+
+                    <b-carousel-slide class="team-carousel__slide h-100">
+                        <div class="row h-100">
                             <div class="col-4">
                                 <card-team :item="team[6]"></card-team>
                             </div>
@@ -59,21 +71,9 @@
                             <div class="col-4">
                                 <card-team :item="team[7]"></card-team>
                             </div>
-                        </div>
-                    </b-carousel-slide>
 
-                    <b-carousel-slide class="team-carousel__slide h-100">
-                        <div class="row h-100">
                             <div class="col-4">
                                 <card-team :item="team[8]"></card-team>
-                            </div>
-
-                            <div class="col-4">
-                                <card-team :item="team[9]"></card-team>
-                            </div>
-
-                            <div class="col-4">
-                                <card-team :item="team[10]"></card-team>
                             </div>
                         </div>
                     </b-carousel-slide>
@@ -81,11 +81,11 @@
                     <b-carousel-slide class="team-carousel__slide h-100">
                         <div class="row justify-content-center h-100">
                             <div class="col-4">
-                                <card-team :item="team[2]"></card-team>
+                                <card-team :item="team[9]"></card-team>
                             </div>
 
                             <div class="col-4">
-                                <card-team :item="team[1]"></card-team>
+                                <card-team :item="team[10]"></card-team>
                             </div>
                         </div>
                     </b-carousel-slide>
@@ -96,7 +96,7 @@
             <b-carousel
                 id="carousel-fade"
                 indicators
-                :interval="3000000"
+                :interval="5000"
                 class="carousel-mobile"
             >
                 <b-carousel-slide
