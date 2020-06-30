@@ -15,7 +15,7 @@
             <p class="m-0 d-flex align-items-center">
                 <img src="../../assets/icons/calendar-post.svg" alt="" class="calendar">
 
-                <span class="date ml-2">15/07/2020</span>
+                <span class="date ml-2">{{ $moment(item.created_at).format('L') }}</span>
             </p>
 
             <v-btn small color="warning" dark :to="{name: 'blog-slug', params: {slug: item.slugTitleBlog}}" class="text-decoration-none mt-md-3 mt-lg-0">

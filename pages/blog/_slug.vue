@@ -35,7 +35,7 @@
                         <!-- Fecha de publicación -->
                         <span class="admin__blog-date">
                           <i class="far fa-calendar-alt mr-1"></i>
-                          {{ $moment(post.data.created_at).format('L') }}
+                          {{ $moment(post.created_at).format('DD/MM/YYYY') }}
                         </span>
                       </div>
 
@@ -106,6 +106,7 @@ export default {
       blog_slug: {
         prefetch: true,
         query: blog_slug,
+        fetchPolicy: 'no-cache',
         variables() {
           return {
             slugTitle: this.slug
