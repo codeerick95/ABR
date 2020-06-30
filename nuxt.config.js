@@ -130,6 +130,17 @@ export default {
     'cookie-universal-nuxt',
     '@nuxtjs/pwa'
   ],
+  pwa: {
+    meta: {
+      title: 'ABR Grupo consultor',
+      author: 'ABR',
+    },
+    manifest: {
+      name: 'ABR Grupo consultor',
+      short_name: 'ABR',
+      lang: 'es',
+    },
+  },
   bootstrapVue: {
     bootstrapCSS: false, // Or `css: false`
     bootstrapVueCSS: false // Or `bvCSS: false`
